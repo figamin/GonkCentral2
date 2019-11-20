@@ -10,7 +10,7 @@ pnum2 = "_", pnum3 = "_", pt1 = "_", pt2 = "_", sloc = "_",
 gloc = "_", zip = "_", gc = "_", bus = "_", grad = "_";
 Future gee()async{
   var loge = new IPassLogin();
-  await loge.logIn('8458bechta', 'mylife');
+  await loge.logIn1('8458bechta', 'mylife');
   //await loge.logIn('6393anderson', 'daddad64');
   var doc = parse(loge.p1.toString());
   data = doc.querySelectorAll(".Datal");
