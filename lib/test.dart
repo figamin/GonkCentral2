@@ -5,9 +5,9 @@ import 'package:html/parser.dart' show parse;
 import 'package:html/dom.dart';
 main() async {
   var loge = new IPassLogin();
-  await loge.logIn1('8458bechta', 'mylife');
-  var doc = parse(loge.p1.toString());
-  List<Element> ages = doc.querySelectorAll(".Datal");
+  await loge.logIn3('8458bechta', 'mylife');
+  var doc = parse(loge.p3.toString());
+  List<Element> ages = doc.querySelectorAll(".DATA");
   for(int i = 0; i < ages.length; i++)
     {
       print(i.toString() + " " + ages[i].text);
