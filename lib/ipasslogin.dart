@@ -11,7 +11,7 @@ class IPassLogin
     Dio dio = new Dio();
     dio.interceptors.add(CookieManager(cjar));
     var loginPage = 'https://ipassweb.harrisschool.solutions/school/nsboro/syslogin.htm';
-    var response = await dio.post(loginPage + "?userid=6393anderson&password=daddad64");
+    var response = await dio.post(loginPage + "?userid=" + username + "&password=" + password);
     p1 = await dio.get("https://ipassweb.harrisschool.solutions/school/nsboro/istudentbio.htm");
     p2 = await dio.get("https://ipassweb.harrisschool.solutions/school/nsboro/samattendance.htm");
     p3 = await dio.get("https://ipassweb.harrisschool.solutions/school/nsboro/samschedule.htm");
